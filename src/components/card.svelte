@@ -216,8 +216,8 @@
     }
 
     .full-size-container {
-        max-width: 80vh;
-        max-height: 80vh;
+        max-width: 55dvh;
+        max-height: 100vh;
         padding: 2rem;
     }
 
