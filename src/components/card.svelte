@@ -15,6 +15,9 @@
     export let image_url;
     export let likes = 0;
 
+    const cloudFront = 'https://d17hy0mtmgh811.cloudfront.net';
+    let image;
+
     let card; // Card element
     let showExpand = false; // Determine if the expand button should be shown
     let isExpanded = false; // Determine if the card is expanded
@@ -99,6 +102,14 @@
             likes = count;
         }
 
+        if (image_url) {
+            
+            let parts = image_url.split('/');
+            const filename = parts[parts.length - 1];
+            image = cloudFront + '/post_images/' + filename;
+            
+        }
+
         return () => {
             window.removeEventListener('resize', checkCardHeight);
         };
@@ -131,7 +142,7 @@
         <div class="main-container {isExpanded ? 'expanded' : (readyToExport ? 'exportExpanded' : 'not-expanded')}">
             <div class="card" bind:this={card}>
                 <div class="top flex-center-sb">
-                    <img src="https://munch-hub-v1.s3.ap-southeast-1.amazonaws.com/assets/pupmh-logo.png" alt="logo">
+                    <img src="https://d17hy0mtmgh811.cloudfront.net/assets/pupmh-logo.png" alt="logo">
                     <div class="btns flex-center-se">
                         <span class="likes">{likes}</span>
                         <button class="clear pointer" on:click={handleLikePost}>
@@ -147,11 +158,11 @@
                 <span class="title">{title}</span>
                 {#if image_url}
                 <div class="post-container">
-                    <img class="post-image pointer" src={image_url} alt="post" on:click={toggleFullSize} />
+                    <img class="post-image pointer" src={image} alt="post" on:click={toggleFullSize} />
                     {#if isFullSizeVisible}
                     <div class="overlay" on:click={toggleFullSize}>
                         <div class="full-size-container">
-                            <img class="full-size-image" src={image_url} alt="post" />
+                            <img class="full-size-image" src={image} alt="post" />
                         </div>
                     </div>
                     {/if}
