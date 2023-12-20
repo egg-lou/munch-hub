@@ -22,16 +22,24 @@
 
     // This is to show toast notifications
     const showToast = (type, description, progress) => {
-    toasts.add({
-        title: type === 'success' ? 'Success' : 'Error',
-        description: type === 'success' ? `Form submitted successfully (${progress}%)` : description,
-        duration: 3000,
-        placement: 'bottom-left',
-        type: type === 'success' ? 'success' : 'error',
-        theme: 'dark',
-        showProgress: type === 'success', 
-        onClick: () => {},
-        onRemove: () => {},
+
+        const title = (type === 'success' || type === 'error') ? 
+            (type === 'success' ? 'Success' : 'Error') : 'Upload';
+
+        const toastType = (type === 'success' && title === 'Success') ? 'success' : 
+                        (type === 'error' && title === 'Error') ? 'error' : 'info';
+
+        toasts.add({
+            title: title,
+            description: (type === 'success' && title === 'Success') ? 
+                `Form submitted successfully (${progress}%)` : description,
+            duration: 3000,
+            placement: 'bottom-left',
+            type: toastType,
+            theme: 'dark',
+            showProgress: type === 'success', 
+            onClick: () => {},
+            onRemove: () => {},
         });
     };
 
@@ -142,6 +150,8 @@
             console.error('Failed to submit the form!'); // To debug or handle error /(>..,<)\
             return;
         }
+
+        showToast('uploading', 'Uploading your post...', 0); // Show a toast notification that the form is being uploaded
 
         // Get the current date and format it to ISO string
         const currentDate = new Date();
