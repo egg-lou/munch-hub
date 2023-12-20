@@ -147,7 +147,7 @@
                 <span class="title">{title}</span>
                 {#if image_url}
                 <div class="post-container">
-                    <img crossorigin="anonymous" class="post-image pointer" src={image_url} alt="post" on:click={toggleFullSize} />
+                    <img class="post-image pointer" src={image_url} alt="post" on:click={toggleFullSize} />
                     {#if isFullSizeVisible}
                     <div class="overlay" on:click={toggleFullSize}>
                         <div class="full-size-container">
