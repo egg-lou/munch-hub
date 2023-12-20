@@ -145,7 +145,7 @@
     </div>
     {#if visiblePosts.length === 0}
         <span class="flex-center-col">
-            <img src="./src/lib/images/pupmh-logo.png" alt="logo" class="no-post"> 
+            <img src="https://munch-hub-v1.s3.ap-southeast-1.amazonaws.com/assets/pupmh-logo.png" alt="logo" class="no-post"> 
         </span> 
     {:else}
         {#if visiblePosts.length < sortedPosts.length}

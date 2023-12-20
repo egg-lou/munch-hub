@@ -32,7 +32,7 @@
 <main>
     <section class="main flex-center-col">
         <span class="early-access">early access</span>
-        <img src="./src/assets/images/pupmh-logo.png" alt="logo">
+        <img src="https://munch-hub-v1.s3.ap-southeast-1.amazonaws.com/assets/pupmh-logo.png" alt="logo">
         <div class="title">
             <span>PUP</span>
             <span>Munch</span>
@@ -50,7 +50,7 @@
 
 <style>
     main {
-        background: url('./src/lib/images/landing-bg.png') center center fixed;
+        background: url('https://munch-hub-v1.s3.ap-southeast-1.amazonaws.com/assets/landing-bg.png') center center fixed;
         background-size: cover;
         height: 100svh;
         border-bottom: 2px solid #272727;

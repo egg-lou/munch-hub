@@ -41,7 +41,7 @@
                 We can&rsquo;t wait to bite in and start munching for the PUP community!
             </span>
         </div>
-        <img class="fixed-logo" class:hidden={!show} src="./src/assets/images/pupmh-logo.png" alt="logo"> 
+        <img class="fixed-logo" class:hidden={!show} src="https://munch-hub-v1.s3.ap-southeast-1.amazonaws.com/assets/pupmh-logo.png" alt="logo"> 
     </div>
 </main>
 

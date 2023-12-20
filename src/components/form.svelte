@@ -428,7 +428,7 @@
         margin: 15px 0;
         height: 120px;
         width: 100%;
-        background-image: url('../../src/lib/images/hexagon-black.png');
+        background-image: url('https://munch-hub-v1.s3.ap-southeast-1.amazonaws.com/assets/hexagon-black.png');
         background-position: center;
         background-repeat: no-repeat;
     }
