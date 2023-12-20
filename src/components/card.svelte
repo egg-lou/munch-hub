@@ -131,7 +131,7 @@
         <div class="main-container {isExpanded ? 'expanded' : (readyToExport ? 'exportExpanded' : 'not-expanded')}">
             <div class="card" bind:this={card}>
                 <div class="top flex-center-sb">
-                    <img src="./src/lib/images/pupmh-logo.png" alt="logo">
+                    <img src="./src/assets/images/pupmh-logo.png" alt="logo">
                     <div class="btns flex-center-se">
                         <span class="likes">{likes}</span>
                         <button class="clear pointer" on:click={handleLikePost}>

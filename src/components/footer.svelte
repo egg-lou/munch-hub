@@ -4,13 +4,13 @@
 
 <main class="flex-center-row">
     <div class="container">
-        <img src="./src/lib/images/pupmh-logo.png" alt="logo">
+        <img src="./src/assets/images/pupmh-logo.png" alt="logo">
         <div class="content flex-center-col">
             <span>Byte by byte we build this hub, made with love and grades to dub. ❤</span>
             <span>PUP MANILA | BSIT 2-1 A.Y. 2023-2024 | JAVASCRIPT GROUP</span>
             <span>All content presented here is for educational purposes only, protected by fair use copyright.</span>
         </div>
-        <img src="./src/lib/images/js2-1-logo.png" alt="logo">
+        <img src="./src/assets/images/js2-1-logo.png" alt="logo">
     </div>
 </main>
 

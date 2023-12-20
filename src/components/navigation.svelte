@@ -87,7 +87,7 @@
     <div class="nav flex-center-sb">
         {#if showNav}
             <div class="logo flex-center-row pointer" on:click={redir_home}>
-                <img src="./src/lib/images/pupmh-logo.png" alt="logo">
+                <img src="./src/assets/images/pupmh-logo.png" alt="logo">
                 <div class="title">
                     <span>PUP</span>
                     <span>Munch</span>

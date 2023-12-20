@@ -1,15 +1,15 @@
 <script>
     // Array that contains the data of each team member
     let teamMembers = [
-        { name: 'Francis', role: 'Project Manager', image: './src/lib/images/1-francis.png' },
-        { name: 'Mary', role: 'Technical Designer', image: './src/lib/images/2-mary.png' },
-        { name: 'Luisa', role: 'Lead Developer', image: './src/lib/images/3-luisa.png' },
-        { name: 'Irah', role: 'Developer', image: './src/lib/images/4-irah.png' },
-        { name: 'Angela', role: 'System Analyst', image: './src/lib/images/5-angela.png' },
-        { name: 'Aaron', role: 'Business Analyst', image: './src/lib/images/6-aaron.png' },
-        { name: 'Alessa', role: 'Business Analyst', image: './src/lib/images/7-alessa.png' },
-        { name: 'Joaquin', role: 'Technical Writer', image: './src/lib/images/8-eduardo.png' },
-        { name: 'Alwyn', role: 'Technical Writer', image: './src/lib/images/9-alwyn.png' }
+        { name: 'Francis', role: 'Project Manager', image: './src/assets/images/1-francis.png' },
+        { name: 'Mary', role: 'Technical Designer', image: './src/assets/images/2-mary.png' },
+        { name: 'Luisa', role: 'Lead Developer', image: './src/assets/images/3-luisa.png' },
+        { name: 'Irah', role: 'Developer', image: './src/assets/images/4-irah.png' },
+        { name: 'Angela', role: 'System Analyst', image: './src/assets/images/5-angela.png' },
+        { name: 'Aaron', role: 'Business Analyst', image: './src/assets/images/6-aaron.png' },
+        { name: 'Alessa', role: 'Business Analyst', image: './src/assets/images/7-alessa.png' },
+        { name: 'Joaquin', role: 'Technical Writer', image: './src/assets/images/8-eduardo.png' },
+        { name: 'Alwyn', role: 'Technical Writer', image: './src/assets/images/9-alwyn.png' }
     ];
 </script>
 
